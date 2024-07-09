@@ -1,14 +1,16 @@
-import { ReducerType } from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit"
 
-const initilstate = {
+const aanda = {
     value:0
 }
 
-const counterSlice = createSlice ({
-    name:'counter',
-    initilstate:aanda,
-    Reducers:{
-        
+export const counterSlice = createSlice ({
+    name:"counter",
+    initialState:aanda,
+    reducers:{
+
     }
 
 })
+
+export default counterSlice.reducer
